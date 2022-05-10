@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assignment1.css">
+    <script src="assignment1.js"></script>
+    <title>Assignment 1</title>
+</head>
+<body>
+    
+    <div class="container">
+        <form onsubmit="event.preventDefault(); onSubmitForm();" required>
+            <h3>Enter Details:</h3>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Ex. Maulik Patel"  required>
+            </div>
+            <div>
+                <label for="job">Job:</label>
+                <input type="text" id="job" placeholder="ex. Software Engineer" required >
+            </div>
+            <div>
+                <label for="Email-add">E-mail:</label>
+                <input type="email" id="Email-add" placeholder="ex. Maulik@gmail.com" required >
+            </div>
+            <div>
+                <label for="phone">Phone number:</label>
+                <input type="number" id="phone"  placeholder="ex. +178376478" required>
+            </div>
+            <div>
+                <label for="wage">Salary:</label>
+                <input type="number" id="wage" required>
+            </div>
+            
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>  
+        </form>
+    </div>
+    <div id="container_">
+        <h3>Submitted Information</h3>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Job</th>
+                <th>Email</th>
+                <th>Phone number</th>
+                <th>Salary</th>
+            </thead>
+            <tbody id="dataRow"></tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
